@@ -16,13 +16,12 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 20px;
+  padding: 5px 20px;
   position: sticky; 
   top: 0;
   width: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   backdrop-filter: saturate(180%) blur(20px);
-  background: rgba(250, 250, 252, .8);
+  background: #FAFAFC;
   z-index: 1000;
 }
 
@@ -79,8 +78,8 @@ ul.menu li ul.subMenu::before{
   top: 50px;
   left: 0;
   width: 100vw;
-  height: 180px; 
-  background: #FBFBFD;
+  height: 170px; 
+  background: #FAFAFC;
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
   backdrop-filter: saturate(180%) blur(20px);
   z-index: -1; 
