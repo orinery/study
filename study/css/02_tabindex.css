@@ -9,8 +9,10 @@
 
 body {
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
+ /* 네비게이션 바------------------ */
 nav {
   position: relative;
   display: flex;
@@ -24,7 +26,6 @@ nav {
   background: #FAFAFC;
   z-index: 1000;
 }
-
 .logo img {
   display: inline-block;
   position: relative;
@@ -39,14 +40,12 @@ ul.menu {
   display: flex;
   gap: 50px;
 }
-
 ul.menu li {
   position: relative; 
   z-index: 1;
   list-style: none;
   padding: 10px 20px;
 }
-
 ul.menu li a {
   z-index: 1;
   text-decoration: none;
@@ -54,11 +53,6 @@ ul.menu li a {
   font-weight: 500;
   font-size: 16px;
 }
-
-ul.menu li a:hover, ul.menu li a:focus{
-  color:  #000000;
-}
-
 ul.menu li .subMenu {
   position: absolute;
   top: 100%;
@@ -68,29 +62,35 @@ ul.menu li .subMenu {
   width: 145px;
   gap: 10px;
   z-index: 10;
+  background: #FAFAFC;
   opacity: 0;
   visibility: hidden;
-}
-ul.menu li ul.subMenu::before{
-  content: '';
-  position: fixed; 
-  top: 50px;
-  left: 0;
-  width: 100vw;
-  height: 170px; 
-  background: #FAFAFC;
-  backdrop-filter: saturate(180%) blur(20px);
-  z-index: -1; 
+  transition: opacity 0.3s ease;
 }
 ul.menu li .subMenu li{
-  padding: unset;
+  padding: 0px 20px;
 }
-ul.menu li ul li a{
-  z-index: 10;
+ul.menu li .subMenu li a{
   font-size: 15px;
-  padding:10px 0px 0px 20px;
 }
-ul.menu li:hover .subMenu , ul.menu li:focus-visible .subMenu, ul.menu li:focus-within .subMenu  {
+ul.menu li ul.first.subMenu::before{
+  content: '';
+  position: absolute; 
+  top: 0; 
+  left: -50vw;
+  width: 200vw;
+  height: 170px;
+  background: #FAFAFC;
+  backdrop-filter: saturate(180%) blur(20px);
+}
+ul.menu li a:hover,
+ul.menu li a:focus,
+ul.menu li:focus-within > .mainMenu,
+ul.menu li:hover > .mainMenu{
+  color:  #000000;
+}
+ul.menu:hover .subMenu ,
+ul.menu:focus-within li .subMenu {
   opacity: 1;
   visibility: visible;
   z-index: 10;
