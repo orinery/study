@@ -86,14 +86,10 @@ ul.menu li ul.first.subMenu::before{
   height: 170px;
   background:linear-gradient( #FAFAFC, #E2E2E2);
 }
-ul.menu:hover,
-ul.menu:focus,
-ul.menu li:focus-within > .mainMenu,
-ul.menu li:hover > .mainMenu,
-nav:has(ul.menu:hover),
-nav:has(ul.menu:focus),
-nav:has(ul.menu:focus-within > .mainMenu),
-nav:has(ul.menu:hover > .mainMenu) {
+nav:focus-within, 
+nav:hover,
+ul.menu li:focus-within > a,
+ul.menu li:hover > a{
   background: #FAFAFC;
   color:  #000000;
 }
