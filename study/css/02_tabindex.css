@@ -90,7 +90,7 @@ ul.menu li ul.first.subMenu::before{
   left: -50vw;
   width: 200vw;
   height: 170px;
-  background:linear-gradient( #FAFAFC, #E2E2E2);
+  background:linear-gradient( #FAFAFC, #eeeeee);
 }
 nav:focus-within, 
 nav:hover{
