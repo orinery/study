@@ -93,10 +93,12 @@ ul.menu li ul.first.subMenu::before{
   background:linear-gradient( #FAFAFC, #E2E2E2);
 }
 nav:focus-within, 
-nav:hover,
+nav:hover{
+  background: #FAFAFC;
+  color:  #000000;
+}
 ul.menu li:focus-within > a,
 ul.menu li:hover > a{
-  background: #FAFAFC;
   color:  #000000;
 }
 ul.menu:hover .subMenu ,
@@ -245,6 +247,10 @@ main .service-item {
   padding: 15px;
   border-radius: 5px;
   text-align: center;
+}
+main .service-item a{
+  color: #000;
+  font-weight: 600;
 }
 
 main .service-item dt {
