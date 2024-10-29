@@ -171,7 +171,7 @@ main .serviceInfo .contactInfo{
   align-items:flex-start;
   gap: 5px;
 }
-main .serviceInfo .contactInfo h3{
+main .serviceInfo .contactInfo h4{
   font-size: 22px;
   font-weight: 600;
 }
@@ -189,7 +189,7 @@ main .serviceInfo .details{
   align-items: center;
   gap: 50px;
 }
-main .serviceInfo .details strong,  main .csAlliate .details strong{
+main .serviceInfo .details h4,  main .csAlliate .details h4{
   font-size: 20px;
   font-weight: 600;
 }
