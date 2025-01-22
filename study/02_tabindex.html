@@ -8,88 +8,94 @@
   <link rel="stylesheet" href="./css/02_tabindex.css">
 </head>
 <body>
-  <nav>
+  <header>
     <!-- 로고 -->
-    <a href="#" class="logo" >
-      <img src="./images/02_tabindex/apple-logo.svg" alt="애플 로고">
-    </a>
+    <h1>      
+      <a href="#" class="logo" >
+        <img src="./images/02_tabindex/apple-logo.svg" alt="애플 코리아 로고">
+      </a>
+    </h1>
     <!-- 네비게이션 링크 -->
-    <ul class="menu" >
-        <li>
-          <a href="#" class="mainMenu">Mac</a>
-          <ul class="first subMenu ">
-            <li><a href="">MacBook Air</a></li>
-            <li><a href="">MacBook Pro</a></li>
-            <li><a href="">iMac</a></li>
-            <li><a href="">Mac mini</a></li>
-          </ul>
-        </li>
-        <li><a href="#" class="mainMenu">iPhone</a>
-          <ul class="subMenu">
-            <li><a href="#">iPhone 16 Pro</a></li>
-            <li><a href="#">iPhone 16</a></li>
-            <li><a href="#">iPhone 15</a></li>
-            <li><a href="#">iPhone 14</a></li>
-            <li><a href="#">iPhone SE</a></li>
-          </ul>
-        </li>
-        <li><a href="#" class="mainMenu">iPad</a>
-          <ul class="subMenu">
-            <li><a href="#">iPad Pro</a></li>
-            <li><a href="#">iPad Air</a></li>
-            <li><a href="#">iPad</a></li>
-            <li><a href="#">iPad mini</a></li>
-          </ul>
-        </li>
-        <li><a href="#" class="mainMenu">액세서리</a></li>
-        <li>
-          <a href="#" class="mainMenu">고객지원</a>
-          <ul class="subMenu">
-            <li><a href="#">커뮤니티</a></li>
-            <li><a href="#">수리</a></li>
-            <li><a href="#">문의하기</a></li>
-          </ul>
-        </li>
-    </ul>
-  </nav>
+    <nav>
+      <ul class="menu" >
+          <li>
+            <a href="#" class="mainMenu">Mac</a>
+            <ul class="first subMenu ">
+              <li><a href="">MacBook Air</a></li>
+              <li><a href="">MacBook Pro</a></li>
+              <li><a href="">iMac</a></li>
+              <li><a href="">Mac mini</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="mainMenu">iPhone</a>
+            <ul class="subMenu">
+              <li><a href="#">iPhone 16 Pro</a></li>
+              <li><a href="#">iPhone 16</a></li>
+              <li><a href="#">iPhone 15</a></li>
+              <li><a href="#">iPhone 14</a></li>
+              <li><a href="#">iPhone SE</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="mainMenu">iPad</a>
+            <ul class="subMenu">
+              <li><a href="#">iPad Pro</a></li>
+              <li><a href="#">iPad Air</a></li>
+              <li><a href="#">iPad</a></li>
+              <li><a href="#">iPad mini</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="mainMenu">액세서리</a></li>
+          <li>
+            <a href="#" class="mainMenu">고객지원</a>
+            <ul class="subMenu">
+              <li><a href="#">커뮤니티</a></li>
+              <li><a href="#">수리</a></li>
+              <li><a href="#">문의하기</a></li>
+            </ul>
+          </li>
+      </ul>
+    </nav>
+  </header>
   <main>
-    <figure class="banner">
+    <picture class="banner">
+      <source srcset="./images/02_tabindex/banner.jpg"  media="(max-width: 768px)">
+      <source srcset="./images/02_tabindex/banner.jpg"  media="(max-width: 1024px)">
       <img src="./images/02_tabindex/banner.jpg" alt="애플 사용자 이미지 배너">
-    </figure>
-    <div class="wrap">
+    </picture>
+    <article class="wrap">
       <h1>고객지원</h1>
-      <section class="csCategory">
-        <section class="csItem">
+      <ul class="csCategory">
+        <li class="csItem">
           <a href="#">
             <img src="./images/02_tabindex/CsCategory_Mac.png" alt="맥 이미지">
             <h4>Mac</h4>
           </a>
-        </section>
-        <section class="csItem">
+        </li>
+        <li class="csItem">
           <a href="#">
             <img src="./images/02_tabindex/CsCategory_iphone.png" alt="아이폰 이미지">
             <h4>iPhone</h4>
           </a>
-        </section>
-        <section class="csItem">
+        </li>
+        <li class="csItem">
           <a href="#">
             <img src="./images/02_tabindex/CsCategory_iPad.png" alt="아이패드 이미지">
             <h4>iPad</h4>
           </a>
-        </section>
-        <section class="csItem">
+        </li>
+        <li class="csItem">
           <a href="#">
             <img src="./images/02_tabindex/CsCategory_Watch.png" alt="애플워치 이미지">
             <h4>Watch</h4>
           </a>
-        </section>
-        <section class="csItem">
+        </li>
+        <li class="csItem">
           <a href="#">
             <img src="./images/02_tabindex/CsCategory_airPods.png" alt="에어팟 이미지">
             <h4>AirPods</h4>
           </a>
-        </section>
-      </section>
+        </li>
+      </ul>
 
       <section class="serviceInfo">
         <article class="contactInfo">
@@ -106,7 +112,7 @@
           </ul>
         </article>
       </section>
-    </div>
+    </article>
     <div class="full_wrap">
       <section class="csAlliate">
         <h3>공인 서비스 제공업체</h3>
@@ -193,8 +199,8 @@
     </div>
   </main>
   <footer class="footer">
-    <img src="./images/02_tabindex/apple-logo.svg" alt="애플 로고">
-    <p>Copyright © 2024 Apple Inc. 모든 권리 보유.</p>
+    <img src="./images/02_tabindex/apple-logo.svg" alt="애플 코리아">
+    <small>Copyright &copy; 2024 Apple Inc. 모든 권리 보유.</small>
     <ul class="footer-links">
       <li><a href="#">개인정보 처리방침</a></li>
       <li><a href="#">웹 사이트 이용 약관</a></li>
