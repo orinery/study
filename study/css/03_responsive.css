@@ -1,13 +1,20 @@
-body{max-width: 1270px;width: 100%;margin-inline:auto;padding: 0 20px;}
+body{max-width: 1270px;width: 100%;margin-inline:auto;}
 a{text-decoration: none; color: black;}
 
 /* ----header---- */
 header{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-header figure {width: 180px;}
-header h1{font-size: 3em;}
+header figure {
+  z-index: 1;
+  width: 180px;
+  margin-block-end: -55px;
+  margin-inline-start: 0px;
+  margin-inline-end: 10px;
+}
+header h1{font-size: 3.2em;}
 
 
 /* ----nav---- */
@@ -20,10 +27,10 @@ nav{
   background-color: #BAE7E8;
 }
 nav ol{
-  /* list-style: none; */
+  list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2개의 열 */
-  grid-template-rows: repeat(3, auto); /* 3개의 행 */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
   grid-auto-flow: column;
   gap: 10px;
 }
