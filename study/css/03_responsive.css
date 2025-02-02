@@ -1,0 +1,34 @@
+body{max-width: 1270px;width: 100%;margin-inline:auto;padding: 0 20px;}
+a{text-decoration: none; color: black;}
+
+/* ----header---- */
+header{
+  display: flex;
+  align-items: center;
+}
+header figure {width: 180px;}
+header h1{font-size: 3em;}
+
+
+/* ----nav---- */
+nav{
+  position: relative;
+  padding: 50px 0px;
+  /* 배경 컬러 설정 ------ */
+  box-shadow: 0 0 0 100vmax #BAE7E8;
+  clip-path: inset(0 -100vmax);
+  background-color: #BAE7E8;
+}
+nav ol{
+  /* list-style: none; */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2개의 열 */
+  grid-template-rows: repeat(3, auto); /* 3개의 행 */
+  gap: 10px;
+}
+nav ol li{
+  outline: 2px solid red;
+}
+@media (min-width: 360px) and (max-width: 890px) {
+
+}
