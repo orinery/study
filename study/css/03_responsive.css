@@ -24,6 +24,7 @@ nav ol{
   display: grid;
   grid-template-columns: 1fr 1fr; /* 2개의 열 */
   grid-template-rows: repeat(3, auto); /* 3개의 행 */
+  grid-auto-flow: column;
   gap: 10px;
 }
 nav ol li{
